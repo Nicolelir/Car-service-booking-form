@@ -1,0 +1,89 @@
+*{box-sizing: border-box;
+}
+
+body{
+  background-image:url("https://www.centralaveauto.com/wp-content/uploads/2015/02/service-center-standards.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+form, h1, .booking {
+    background-color: rgba(27, 27, 50, 0.8);
+    color: whitesmoke;
+    width: 140vw;
+    max-width: 700px;
+    min-width: 350px;
+    margin: 0 auto;
+    padding: 30px;
+  }
+  
+
+  label {
+    font-size: 1.125rem;
+    margin-bottom: 0.5rem;
+    vertical-align:top;
+  }
+
+.booking{
+color:whitesmoke;
+font-size: 1.3rem;
+  }
+
+  .text{
+    font-size: 1.3rem;
+  }
+
+  .group{
+  padding: 5px;
+  margin: 0 auto 5px auto;
+  }
+
+  .about .time .menu .comments{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+
+  #description{
+    text-align: center;
+  }
+  
+  #title{
+    text-align: center;
+    color: whitesmoke;
+  }
+  
+  
+    .content{
+      width: 100%;
+    }
+    
+    input, select {
+    width:100%;
+    margin: 0;
+    font-size: inherit;
+    line-height: inherit;
+    padding: 8px;
+    display: inline-flex;
+  }
+  
+
+  .area{
+    width:100%;
+  }
+
+  .white-color label,
+  .white-color .form-text,
+  .white-color input {
+    color: white;
+  }
+
+#submit{
+background-color: #37af65;
+padding: 15px;
+color: whitesmoke;
+font-weight: bold;
+}
