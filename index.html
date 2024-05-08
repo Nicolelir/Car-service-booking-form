@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Car service booking form">
     <!-- CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -22,7 +23,7 @@
    </header>
    <form id="survey-form">
     <div class="row">
-        <div class="col-md-6 titles">
+        <div class="col-md-6 col-12 titles">
             <h2 class="VehicleType titles">Vehicle Type</h2>
         </div>
         <div class="form-check">
@@ -53,7 +54,7 @@
         <label for="model" class="form-label">Model</label>
         <input type="text" class="form-control" id="model">
         <br>
-        <div class="col-md-6 titles">
+        <div class="col-md-6 col-12 titles">
             <h2 class="Service titles">Type of service</h2>
         </div>
         <div class="form-check">
@@ -77,9 +78,10 @@
             <label class="form-check-label" for="others">Others</label>
         </div>
         <br>
-        <div class="col-md-6 titles">
+        <div class="col-md-6 col-12 titles">
             <h2 class="center titles">Choose Centre</h2>
         </div>
+        <label for="dropdown" class="form-label">Choose Centre</label>
         <select id="dropdown">
             <option value="cork">Cork</option>
             <option value="dublin">Dublin</option>
@@ -87,26 +89,36 @@
             <option value="galway">Galway</option>
         </select>
         <br>
-        <div class="col-md-6 titles">
+        <div class="col-md-6 col-12 titles">
             <h2 class="titles">Customer Information</h2>
         </div>
 
       <div class="mb-3 white-color">
-        <label for="name" id="name-label" class="form-label">First Name<input type="text" class="form-control" id="name" placeholder="Enter your name" value="Name" autocomplete="given-name" required></label>
-        <label for="last-name-input" class="form-label">Last Name:<input type="text" class="form-control" id="last-name-input" placeholder="Enter your last name" required></label>
-        <label for="number" id="number-label" class="form-label">Phone Number<input type="number" class="form-control" id="number" min="0" max="9" aria-describedby="emailHelp" placeholder="Enter your number" value="0"></label>
-        <label for="email" id="email-label" class="form-label">Email<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email" value="Email" autocomplete="email" required></label>
+        <label for="name" id="name-label" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name" value="Name" autocomplete="given-name" required>
+        
+        <label for="last-name-input" class="form-label">Last Name:</label>
+        <input type="text" class="form-control" id="last-name-input" placeholder="Enter your last name" required>
+        
+        <label for="number" id="number-label" class="form-label">Phone Number</label>
+          <input type="number" class="form-control" id="number" min="0" max="9" aria-describedby="emailHelp" placeholder="Enter your number" value="0">
+        
+        <label for="email" id="email-label" class="form-label">Email</label>
+          <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Email" value="Email" autocomplete="email" required>
+        
         <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-        <label for="address-input" class="form-label">Address:<input type="text" class="form-control" id="address-input"></label>
-        <div id="addressHelp1" class="form-text">Street Address</div>
-        <input type="text" class="form-control" id="Address2">
-        <div id="addressHelp2" class="form-text">Street Address Line 2</div>
-        <input type="text" class="form-control" id="city">
-        <div id="cities" class="form-text">City</div>
-        <input type="text" class="form-control" id="county1">
-        <div id="county" class="form-text">County</div>
-        <input type="text" class="form-control" id="zipCode">
-        <div id="postal" class="form-text">Postal / Zip Code</div>
+       
+        <label for="Address2" class="form-label">Address</label>
+        <input type="text" class="form-control" id="Address2" name="address2">
+        
+        <label for="city" class="form-label">City</label>
+        <input type="text" class="form-control" id="city" name="city">
+        
+        <label for="county1" class="form-label">County</label>
+        <input type="text" class="form-control" id="county1" name="county">
+        
+        <label for="zipCode" class="form-label">Postal / Zip Code</label>
+        <input type="text" class="form-control" id="zipCode" name="zipCode">
         <label class="comments">Comments and suggestions?</label>
         <textarea class="text-area" rows="10" cols="50" id="area" placeholder="Enter your comment here..."></textarea>
         <input type="submit" value="Book Now" id="submit">
